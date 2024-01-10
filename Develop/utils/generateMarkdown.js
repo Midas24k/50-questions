@@ -1,3 +1,6 @@
+const MITLB = ('https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT');
+const ISCB = ('https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC');
+const TALB = ('https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0')
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}

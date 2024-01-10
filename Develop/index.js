@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 // TODO: Create an array of questions for user input
 const questions = [
+    
     {
         type: 'input',
         name: 'Title',
@@ -32,6 +33,7 @@ const questions = [
         type: 'Checkbox',
         name: 'Licensing',
         message: 'Select the tyoe of Licensing you will need?',
+        choices:['Mit', 'ISC', 'Artistic-2.0' ]
     },
     {
         type: 'input',
@@ -60,12 +62,12 @@ function writeToFile(fileName, data) {
         } else{
             console.log(`Data written to ${fileName} successfully`);
         }
-    })
+    });
 }
 
 // TODO: Create a function to initialize app
 function init(inquirer) {
-    inquirer.prompt(questions).then((data) => {
+    inquirer.prompt(questions).then((response) => {
         const readMeContent = function generateMarkdown(data) {
             return `# ${data.title}
             # ${response.title}
@@ -73,14 +75,14 @@ function init(inquirer) {
             # Table of Contents
             -[description](#description)
             -[Installation](#Installation)
-            -[Usage](#Usage)
+            -[Usage](#Usage)     
             -[Contirbutors](#Contirbutors)
             -[Licensing](#Licensing)
             -[Tests](#Tests)
             -[Github](#Github)
             -[Email](#Email)
             
-            ${responsse.username}
+            ${response.username}
             ##username:
             
               ${response.description}
@@ -108,14 +110,16 @@ function init(inquirer) {
             ##Email:
           `;
           }
-    })
-    writeToFile('README.md', readMeContent, (err) => {
-        if (err) {
-            console.error('Intialzation failed.');
-        } else {
-            console.log('Initialization successful.');
-        }
+          module.exports = generateMarkdown;
+          writeToFile('README.md', readMeContent, (err) => {
+            if (err) {
+                console.error('Intialzation failed.');
+            } else {
+                console.log('Initialization successful.');
+            }
+        }); 
     });
+    
 }
 
 // Function call to initialize app
