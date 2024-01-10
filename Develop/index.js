@@ -1,20 +1,7 @@
 // TODO: Include packages needed for this application
-const inquirer = require(`inquirer`);
-const fs = require(`fs`);
-
+const inquirer = require('inquirer');
+const fs = require('fs');
 // TODO: Create an array of questions for user input
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-
-}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-
-
 const questions = [
     {
         type: 'input',
@@ -65,5 +52,71 @@ const questions = [
 
 ];
 
-inquirer.prompt(questions).then((data) => generateMarkdown(data))
-    init();
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err) {
+            console.error(`Error writing to ${fileName}: ${err}`);
+        } else{
+            console.log(`Data written to ${fileName} successfully`);
+        }
+    })
+}
+
+// TODO: Create a function to initialize app
+function init(inquirer) {
+    inquirer.prompt(questions).then((data) => {
+        const readMeContent = function generateMarkdown(data) {
+            return `# ${data.title}
+            # ${response.title}
+          
+            # Table of Contents
+            -[description](#description)
+            -[Installation](#Installation)
+            -[Usage](#Usage)
+            -[Contirbutors](#Contirbutors)
+            -[Licensing](#Licensing)
+            -[Tests](#Tests)
+            -[Github](#Github)
+            -[Email](#Email)
+            
+            ${responsse.username}
+            ##username:
+            
+              ${response.description}
+            ##description:
+           
+             ${response.Installation}
+            ##Installation:
+          
+              ${response.Usage}
+            ##Usage:
+          
+              ${response.Contirbutors}
+            ##Contributors:
+          
+              ${response.Licensing}
+            ##Licensing
+          
+              ${response.Tests}
+            ##Tests:
+          
+              ${response.Github}
+            ##Github:
+          
+             ${response.Email}
+            ##Email:
+          `;
+          }
+    })
+    writeToFile('README.md', readMeContent, (err) => {
+        if (err) {
+            console.error('Intialzation failed.');
+        } else {
+            console.log('Initialization successful.');
+        }
+    });
+}
+
+// Function call to initialize app
+init();
