@@ -19,11 +19,11 @@ function generateMarkdown(data) {
   -[description](#description)
   -[Installation](#Installation)
   -[Usage](#Usage)
-  -[]()
-  -[]()
-  -[]()
-  -[]()
-  -[]()
+  -[Contirbutors](#Contirbutors)
+  -[Licensing](#Licensing)
+  -[Tests](#Tests)
+  -[Github](#Github)
+  -[Email](#Email)
   
   ${responsse.username}
   ##username:
