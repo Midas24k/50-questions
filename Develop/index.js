@@ -39,7 +39,7 @@ inquirer
         }, 
         {
             type: 'input',
-            name: 'Contributing',
+            name: 'Contributors',
             message: 'Did anyone or anthing help you to create this app?',
         },
         {
@@ -52,6 +52,23 @@ inquirer
             name: 'Tests',
             message: 'Are there any test utlized to ensure quality?',
         },
+        {
+            type: 'input',
+            name: 'GitHub',
+            message: 'What is your Github username?',
+        },
+        {
+            type: 'input',
+            name: 'Email',
+            message: 'What is your email address?',
+        },
+
+
+
+
+
+
+
     ])
     
     

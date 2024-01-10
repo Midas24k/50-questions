@@ -17,8 +17,8 @@ function generateMarkdown(data) {
 
   # Table of Contents
   -[description](#description)
-  -[]()
-  -[]()
+  -[Installation](#Installation)
+  -[Usage](#Usage)
   -[]()
   -[]()
   -[]()
@@ -34,7 +34,23 @@ function generateMarkdown(data) {
   ${response.Installation}
   ##Installation:
 
+  ${response.Usage}
+  ##Usage:
 
+  ${response.Contirbutors}
+  ##Contributors:
+
+  ${response.Licensing}
+  ##Licensing
+
+  ${response.Tests}
+  ##Tests:
+
+  ${response.Github}
+  ##Github:
+
+  ${response.Email}
+  ##Email:
 `;
 }
 
