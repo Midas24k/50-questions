@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./generateMarkdown.js');
+const path = require('path')
 // TODO: Create an array of questions for user input
 const questions = [
     
@@ -9,6 +10,11 @@ const questions = [
         type: 'input',
         name: 'Title',
         message: 'What would you like to call this thing?',
+    },
+    {
+        type: 'input',
+        name: 'Username',
+        message: 'Who created this project?',
     },
     {
         type: 'input',
@@ -31,10 +37,10 @@ const questions = [
         message: 'Did anyone or anthing help you to create this app?',
     },
     {
-        type: 'Checkbox',
+        type: 'checkbox',
         name: 'Licensing',
         message: 'Select the tyoe of Licensing you will need?',
-        choices:['Mit', 'ISC', 'Artistic-2.0' ]
+        choices:['Mit', 'ISC', 'Artistic-2.0']
     },
     {
         type: 'input',
@@ -43,8 +49,8 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'GitHub',
-        message: 'What is your Github username?',
+        name: 'Github',
+        message: 'What is your Github user address?',
     },
     {
         type: 'input',
@@ -55,21 +61,22 @@ const questions = [
 
 ];
 
+// // TODO: Create a function to write README file
+// function writeMarkDownFile(responses) {
+//     fs.writeFile('README.md', generateMarkdown(responses));
+// }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log(responses)
         console.log('Making your new README.md file')
-        // writeToFile('README.md', generateMarkdown(...responses))
+       fs.writeFileSync(path.join(process.cwd(),'README.md'), generateMarkdown(responses))
     });
     
 }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(fileName, data,);
-}
+
 
 // Function call to initialize app
 init();
