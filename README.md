@@ -1,5 +1,5 @@
-# readme generator
-  # readme generator
+# README.md Generator
+  # README.md Generator
 
   # Table of Contents
   #[description](#description)
@@ -15,13 +15,14 @@
   Roderick Hughey
   
   #Description:
-   This project is challenge 9 create README.md using node.js. It was a good learning exprience that came with a lot hardships but it was fun.
+   This project is challenge 9 create README.md using node.js. It was a good learning experience that came with many hardships but was fun.
  
   #Installation:
    using JavaScript and  node.js
 
   #Usage:
     For ease of life
+  ![Screen Shot 2024-01-11 at 22 33 52 PM](https://github.com/Midas24k/50-questions/assets/137853877/36ed4104-981e-44b3-bfa8-9e2b605c79f8)
 
   #Contributors:
     no
