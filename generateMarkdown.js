@@ -1,27 +1,44 @@
 
-const mitLicense = {
-  "badge": "https://img.shields.io/badge/License-MIT-yellow.svg",
-  "url": "https://opensource.org/licenses/MIT"
-}
-const iscLicense = {
-  "badge": "https://img.shields.io/badge/License-ISC-blue.svg",
-  "url": "https://opensource.org/licenses/ISC"
-}
-const  artLicense = {
-  "badge": "https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg",
-  "url":"https://opensource.org/licenses/Artistic-2.0"
-}
+// const mitLicense = {
+//   "badge": "https://img.shields.io/badge/License-MIT-yellow.svg",
+//   "url": "https://opensource.org/licenses/MIT"
+// }
+// const iscLicense = {
+//   "badge": "https://img.shields.io/badge/License-ISC-blue.svg",
+//   "url": "https://opensource.org/licenses/ISC"
+// }
+// const  artLicense = {
+//   "badge": "https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg",
+//   "url":"https://opensource.org/licenses/Artistic-2.0"
+// }
 
 function renderLicenseSection(license) {
-  switch (license) {
-    case "Mit":
-      return `[![License](${mitLicense.badge})](${mitLicense.url})`;
-    case "Isc":
-      return `[![License](${iscLicense.badge})](${iscLicense.url})`;
-    case "Artistic 2.0":
-      return `[![License](${artLicense.badge})](${artLicense.url})`;
-    default:
-      return "";
+  if(license !== "None"){
+    return `## Licensing
+    
+    This project is licensed under the ${license} license.`
+  }
+  else{
+    return ""
+  }
+
+}
+
+function renderLicenseBadge(license){
+  if(license !== "None"){
+    return `[![License](https://img.shields.io/badge/License-${license}-yellow.svg)]`
+  }
+  else{
+    return ""
+  }
+}
+
+function renderLicenseLink(license){
+  if(license !== "None"){
+    return `--[Licensing](#Licensing)`
+  }
+  else{
+    return ""
   }
 }
 
@@ -29,23 +46,23 @@ function renderLicenseSection(license) {
 function generateMarkdown(responses) {
   return `# ${responses.Title}
   # ${responses.Title}
+  ${renderLicenseBadge(responses.Licensing)}
+
+  #Description:
+  ${responses.Description}
 
   # Table of Contents
-  #[description](#description)
-  #[Installation](#Installation)
-  #[Usage](#Usage)
-  #[Contirbutors](#Contirbutors)
-  #[Licensing](#Licensing)
-  #[Tests](#Tests)
-  #[Github](#Github)
-  #[Email](#Email)
+
+  --[Installation](#installation)
+  --[Usage](#Usage)
+  --[Contirbutors](#contirbutors)
+  ${renderLicenseLink(responses.Licensing)}
+  --[Tests](#tests)
+  --[Questions](#questions)
   
   #Created by:
   ${responses.Username}
-  
-  #Description:
-   ${responses.Description}
- 
+   
   #Installation:
    ${responses.Installation}
 
@@ -55,17 +72,18 @@ function generateMarkdown(responses) {
   #Contributors:
     ${responses.Contributors}
 
-  #Licensing
-    ${renderLicenseSection(responses.Licensing[0])}
+${renderLicenseSection(responses.Licensing)}
 
   #Tests:
     ${responses.Tests}
 
-  #Github:
-    ${responses.Github}
+  ## Questions
 
-  #Email:
-   ${responses.Email}
+  If you have any questions or would like to reach me, please feel free to email me at [ ${responses.Email}](mailto: ${responses.Email}).
+  To see other projects go to my github : [ ${responses.Github}](https://github.com/ ${responses.Github})
+
+  
+  
 `;
 }
 
