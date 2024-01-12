@@ -1,5 +1,5 @@
-# qaewrq3
-  # qaewrq3
+# readme generator
+  # readme generator
 
   # Table of Contents
   #[description](#description)
@@ -12,28 +12,28 @@
   #[Email](#Email)
   
   #Created by:
-  qwre
+  Roderick Hughey
   
   #Description:
-   qwefrrf
+   This project is challenge 9 create README.md using node.js. It was a good learning exprience that came with a lot hardships but it was fun.
  
   #Installation:
-   qawef
+   using JavaScript and  node.js
 
   #Usage:
-    qwaef
+    For ease of life
 
   #Contributors:
-    wefg
+    no
 
   #Licensing
     [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   #Tests:
-    qewrf
+    no
 
   #Github:
-    qefrr
+    Midas24k@github.com
 
   #Email:
-   qef
+   RoderickHughey@yahoo.com
