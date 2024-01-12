@@ -40,7 +40,7 @@ const questions = [
         type: 'checkbox',
         name: 'Licensing',
         message: 'Select the tyoe of Licensing you will need?',
-        choices:['Mit', 'ISC', 'Artistic-2.0']
+        choices:['Mit', 'Isc', 'Artistic 2.0','None']
     },
     {
         type: 'input',
