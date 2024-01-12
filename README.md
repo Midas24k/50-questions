@@ -23,6 +23,9 @@
   #Usage:
     For ease of life
   ![Screen Shot 2024-01-11 at 22 33 52 PM](https://github.com/Midas24k/50-questions/assets/137853877/36ed4104-981e-44b3-bfa8-9e2b605c79f8)
+ 
+  #Link for tutorial:
+  https://drive.google.com/file/d/1imNbFt6tTWmSM1-o92gdq1_clGSFESnu/view
 
   #Contributors:
     no
