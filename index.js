@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 const path = require('path')
 // TODO: Create an array of questions for user input
 const questions = [
@@ -37,7 +37,7 @@ const questions = [
         message: 'Did anyone or anthing help you to create this app?',
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'Licensing',
         message: 'Select the tyoe of Licensing you will need?',
         choices:['Mit', 'Isc', 'Artistic 2.0','None']
@@ -71,7 +71,7 @@ function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log(responses)
         console.log('Making your new README.md file')
-       fs.writeFileSync(path.join(process.cwd(),'README.md'), generateMarkdown(responses))
+       fs.writeFileSync(path.join(process.cwd(),'README2.md'), generateMarkdown({...responses}))
     });
     
 }
