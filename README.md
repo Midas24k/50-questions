@@ -35,10 +35,10 @@
   If you have any questions or would like to reach me, please feel free to email me at [ Roderickhughey@yahoo.com](mailto:Roderickhughey@yahoo.com).
   To see other projects go to my github : [midas24k](https://github.com/midas24k)
 
-![Alt text](<Screen Shot 2024-01-12 at 19.51.22 PM.png>)
+ ![Title](<READMEimgs/Screen Shot 2024-01-12 at 19.46.39 PM.png>)
 
-![Alt text](<Screen Shot 2024-01-12 at 19.48.32 PM.png>)
-  
-![Alt text](<Screen Shot 2024-01-12 at 19.48.56 PM.png>)
+ ![Title](<READMEimgs/Screen Shot 2024-01-12 at 19.48.32 PM.png>)
 
-![Alt text](<Screen Shot 2024-01-12 at 19.51.22 PM.png>)
+ ![Title](<READMEimgs/Screen Shot 2024-01-12 at 19.48.56 PM.png>)
+
+ ![Title](<READMEimgs/Screen Shot 2024-01-12 at 19.51.22 PM.png>)
