@@ -62,9 +62,7 @@ const questions = [
 ];
 
 // // TODO: Create a function to write README file
-// function writeMarkDownFile(responses) {
-//     fs.writeFile('README.md', generateMarkdown(responses));
-// }
+
 
 // TODO: Create a function to initialize app
 function init() {

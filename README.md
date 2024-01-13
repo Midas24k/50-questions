@@ -1,9 +1,9 @@
-# asfafsd
+# README.md Generator
  
   ![License](https://img.shields.io/badge/License-Mit-yellow.svg)
 
-  #Description:
-  yerhty
+  # Description:
+  This application came about, by the way of a school challenge project. The README.md gernerater does as its name implies to give the user a professional README file in a fraction of the time. It is preinstalled with a structured outline that allows the user to be descriptive without adding extra fluff.This application will continue to devlope as my needs change and is open to anyone to do the same.  
 
   # Table of Contents
 
@@ -15,22 +15,19 @@
   * [Questions](#questions)
   
   ## Created by:
-  aefwert
+  Roderick Hughey
    
-  #Installation:
-   wertf
+  ## Installation:
+   In order to use this application you will need or have Nodejs and Inquirer package installed.
 
-  #Usage:
-    swrg
+  ## Contributors:
+    N/A
 
-  #Contributors:
-    rtg
-
-## Licensing
+  ## Licensing
     
     This project is licensed under the Mit license.
 
-  #Tests:
+  ## Tests:
     no
 
   ## Questions
@@ -38,5 +35,10 @@
   If you have any questions or would like to reach me, please feel free to email me at [ Roderickhughey@yahoo.com](mailto:Roderickhughey@yahoo.com).
   To see other projects go to my github : [midas24k](https://github.com/midas24k)
 
+![Alt text](<Screen Shot 2024-01-12 at 19.51.22 PM.png>)
+
+![Alt text](<Screen Shot 2024-01-12 at 19.48.32 PM.png>)
   
-  
+![Alt text](<Screen Shot 2024-01-12 at 19.48.56 PM.png>)
+
+![Alt text](<Screen Shot 2024-01-12 at 19.51.22 PM.png>)
