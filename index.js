@@ -2,14 +2,14 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-const path = require('path')
+const path = require('path');
 // TODO: Create an array of questions for user input
 const questions = [
     
     {
         type: 'input',
         name: 'Title',
-        message: 'What would you like to call this thing?',
+        message: 'What is the title?',
     },
     {
         type: 'input',
@@ -19,12 +19,12 @@ const questions = [
     {
         type: 'input',
         name: 'Description',
-        message: 'What is this about?',
+        message: 'Give a description?',
     },    
     {
         type: 'input',
         name: 'Installation',
-        message: 'How did you make it?',
+        message: 'How do you install it, how does it work?',
     }, 
     {
         type: 'input',
@@ -34,7 +34,7 @@ const questions = [
     {
         type: 'input',
         name: 'Contributors',
-        message: 'Did anyone or anthing help you to create this app?',
+        message: 'Did anyone or anything help you to create this app?',
     },
     {
         type: 'list',

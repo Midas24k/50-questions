@@ -56,7 +56,7 @@ function generateMarkdown(responses) {
 
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contirbutors](#contirbutors)
+  * [Contributors](#contributors)
   ${renderLicenseLink(responses.Licensing)}
   * [Tests](#tests)
   * [Questions](#questions)
