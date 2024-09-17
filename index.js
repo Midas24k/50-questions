@@ -9,7 +9,7 @@ const questions = [
     {
         type: 'input',
         name: 'Title',
-        message: 'What is the title?',
+        message: 'What is the title of this project?',
     },
     {
         type: 'input',
@@ -19,7 +19,7 @@ const questions = [
     {
         type: 'input',
         name: 'Description',
-        message: 'Give a description?',
+        message: 'Give a brief description?',
     },    
     {
         type: 'input',
@@ -39,13 +39,13 @@ const questions = [
     {
         type: 'list',
         name: 'Licensing',
-        message: 'Select the tyoe of Licensing you will need?',
+        message: 'What is the type of Licensing you will need?',
         choices:['Mit', 'Isc', 'Artistic 2.0','None']
     },
     {
         type: 'input',
         name: 'Tests',
-        message: 'Are there any test utlized to ensure quality?',
+        message: 'Are there any test utilized to ensure quality?',
     },
     {
         type: 'input',
@@ -60,8 +60,6 @@ const questions = [
 
 
 ];
-
-// // TODO: Create a function to write README file
 
 
 // TODO: Create a function to initialize app
